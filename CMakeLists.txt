@@ -22,7 +22,7 @@ include(ExternalProject)
 
 nodejs_init()
 
-set(freetype2_URL "https://download-mirror.savannah.gnu.org/releases/freetype/freetype-2.10.4.tar.gz")
+set(freetype2_URL "https://download-mirror.savannah.gnu.org/releases/freetype/freetype-2.14.3.tar.gz")
 set(freetype2_SOURCE_DIR "${CMAKE_SOURCE_DIR}/external/freetype2")
 
 if(WIN32)
