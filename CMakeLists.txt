@@ -2,8 +2,6 @@ cmake_minimum_required(VERSION 3.14)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-project(node_fontinfo)
-
 if(APPLE)
 	if (NOT CMAKE_OSX_ARCHITECTURES)
 		set(CMAKE_OSX_ARCHITECTURES "${CMAKE_HOST_SYSTEM_PROCESSOR}")
@@ -16,6 +14,8 @@ if(APPLE)
 		endif()
 	endif()
 endif()
+
+project(node_fontinfo)
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake")
 set(freetype2_INSTALL ${CMAKE_BINARY_DIR}/freetype2)
